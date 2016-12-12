@@ -1,6 +1,9 @@
 /* =Base */
+@import '../css/fonts/stylesheet.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 body {
-    font-family: 'Inconsolata', ;
+    font-family: 'Larsseit', 'Helvetica', sans-serif;;
     color: $iron;
     background-color: $dorian;
 }
@@ -15,9 +18,36 @@ a {
     }
 }
 
+a {
+	display: inline-block;
+	position: relative;
+}
+a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .25s ease, background-color .25s ease;
+}
+a:hover:after {
+	width: 100%;
+	background: black;
+}
+
+a.logo, a.logo:after, a.logo:hover:after {
+  transition: none;
+  background: none;
+}
+
+code {
+  font-family: 'Roboto Mono', 'Inconsolata', 'Courier New', monospace;
+}
+
 p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.1em;
+    line-height: 1.7em;
 }
 
 img {
@@ -71,16 +101,20 @@ strong {
 .header {
     overflow: hidden;
 }
-
+/*
 .navigation {
     float:left;
-}
+}*/
 
 .logo {
     font-size: 50px;
     font-weight: 700;
     color: $iron;
     display: block;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    border-bottom: 5px solid black;
 }
 
 .menu {
@@ -126,12 +160,12 @@ strong {
 
 .page-title__text {
     font-weight: 700;
-    font-size: 70px;
+    font-size: 48px;
 }
 
 .page-title__subtitle {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1em;
     color: $cloudy;
 }
 
@@ -161,10 +195,12 @@ strong {
 
 .post-teaser__title {
     font-size: 22px;
+    font-family: 'Roboto Mono', 'Inconsolata', 'Menlo', monospace;
     color: $iron;
 }
 
 .post-teaser__date {
+  font-family: 'Roboto Mono', 'Inconsolata', 'Menlo', monospace;
     font-size: 16px;
     float: right;
     vertical-align: middle;
@@ -225,6 +261,7 @@ strong {
 
 /* =Post page */
 .about {
+    font-family: 'Roboto Mono', 'Inconsolata', monospace;
     color: $cloudy;
     margin-top: 70px;
     text-align: center;
