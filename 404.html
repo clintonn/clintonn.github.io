@@ -1,12 +1,14 @@
 ---
-layout: default
-title: "404 Page Not Found"
-permalink: 404.html
+layout: page
+title: 404
+sitemap:
+  exclude: 'yes'
 ---
 
-<div class="page-content wc-container">
-  <h3>404 Page Not Found</h3>
-  <h4>The page you were looking for is not found.</h4>
-  <p>Sorry, we've misplaced that URL or it's pointing to something that 
-  	doesn't exist. Please <a href="{{ site.baseurl }}">head back home</a> to try finding it again.</p>
-</div>
+<h2 class="go-home">
+    I suggest you <a href="/">going home</a>, it's 404 and it's getting dark!
+</h2>
+
+
+<!-- Adding the glitch effect -->
+<script> document.getElementsByTagName('body')[0].classList.add('glitch'); </script>
