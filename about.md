@@ -1,12 +1,16 @@
 ---
 layout: page
 title: About
-subtitle: Just who the hell you think I am?
+subtitle: Clinton N
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+24 / M / Brooklyn  
+[github][gh] / [twitter][tw] / [insta][insta]
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+see ya on the http ✌️
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+[gh]: http://github.com/clintonn
+[tw]: http://twitter.com/clinton_ngn
+[insta]: http://instagram.com/clintonn

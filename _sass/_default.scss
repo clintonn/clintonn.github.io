@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 body {
-    font-family: 'Larsseit', 'Helvetica', sans-serif;;
+    font-family: $sserif;
     color: $iron;
     background-color: $dorian;
 }
@@ -42,7 +42,7 @@ a.logo, a.logo:after, a.logo:hover:after {
 }
 
 code {
-  font-family: 'Roboto Mono', 'Inconsolata', 'Courier New', monospace;
+  font-family: $mono;
 }
 
 p {
@@ -57,7 +57,6 @@ img {
 }
 
 blockquote {
-    letter-spacing: 3px;
     margin:0px;
     margin-top: 40px;
     margin-bottom: 70px;
@@ -95,7 +94,7 @@ strong {
 /* =Header */
 .wrapper {
     max-width: 800px;
-    margin: 100px auto;
+    margin: 70px auto;
 }
 
 .header {
@@ -170,11 +169,13 @@ strong {
 }
 
 .post-title {
-    margin-bottom: 110px;
+    margin-bottom: 40px;
 }
 
 .post-title__text {
+    font-family: $mono;
     font-size: 40px;
+    margin-bottom: .6em;
 }
 
 .post-title__subtitle {
@@ -195,12 +196,12 @@ strong {
 
 .post-teaser__title {
     font-size: 22px;
-    font-family: 'Roboto Mono', 'Inconsolata', 'Menlo', monospace;
+    font-family: $mono;
     color: $iron;
 }
 
 .post-teaser__date {
-  font-family: 'Roboto Mono', 'Inconsolata', 'Menlo', monospace;
+  font-family: $mono;
     font-size: 16px;
     float: right;
     vertical-align: middle;
@@ -261,7 +262,7 @@ strong {
 
 /* =Post page */
 .about {
-    font-family: 'Roboto Mono', 'Inconsolata', monospace;
+    font-family: $mono;
     color: $cloudy;
     margin-top: 70px;
     text-align: center;
@@ -275,7 +276,7 @@ strong {
 }
 
 .about__text {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #disqus_thread {

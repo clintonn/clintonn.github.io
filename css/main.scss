@@ -10,6 +10,10 @@ $dorian: #F5F5F5;
 $iron: #333333;
 $cloudy: #828282;
 
+// typography
+$mono: 'Roboto Mono', 'Inconsolata', 'Courier', monospace;
+$sserif: 'Larsseit', 'Helvetica', sans-serif;
+
 @import
     "mixins",
     "default",
