@@ -13,4 +13,4 @@ see ya on the http ✌️
 
 [gh]: http://github.com/clintonn
 [tw]: http://twitter.com/clinton_ngn
-[insta]: http://instagram.com/clintonn
+[insta]: http://instagram.com/clinton.n

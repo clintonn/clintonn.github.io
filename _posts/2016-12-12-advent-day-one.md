@@ -1,43 +1,83 @@
 ---
 layout: post
-title: "One star in the advent"
-subtitle: "NaNoWriMo for programmers"
+title: "Advent of Code"
+subtitle: ""
 date: 2016-12-12-00:20:00
 categories: [code, daily-report]
 ---
 
 ![](http://i.imgur.com/2SmSSjr.jpg)
 
-Hacker News recently posted a site called [Advent of Code](adventofcode.com) which is exactly what it sounds like. It's an advent calendar that, instead of rewarding you with chocolate, gives you punishment in the form of progressively more difficult Christmas-themed code exercises.
+While the last week has been solely based on creating functional code for real people, it's easy to miss the fact that you're working with a souped-up calculator.
 
-The first one is a bit of a beginner's staple. You're chasing after the Easter Bunny, and you need to find out how far off his headquarters is on a city grid.
+Which is why I'm thankful to cut my teeth on [Advent of Code](http://adventofcode.com), an advent calendar that, instead of rewarding you with chocolate, gives you punishment in the form of increasingly more mundane coding challenges every day.
 
-The problem gives you a set of directions, coded as `L5, R10, L3`, etc, which mean turn left and move five blocks, turn right and move 10 blocks, and turn left and move three blocks respectively. A 19th-century German mathematician had an apt naming for this weird, hellish Bomberman-like system — [taxicab geometry](https://en.wikipedia.org/wiki/Taxicab_geometry).
+Here's my favorite one, from Day 3:
 
-There are only two coordinates in a two-dimensional Cartesian plane, but I found it was a little less confusion-inducing to map four different array indices for all cardinal directional movements. That way I'd know how far north of south you'd walked. I'd just need to subtract south from north and west from east to get the current position.
+![](http://i.imgur.com/SYRxDZm.png)
+
+The puzzle input gave me 1,992 lines of numbers, all of which were side lengths. They came in this format:
 
 ```
-def move(i)
-  if $D == 'N' # $D meaning cardinal direction
-    if i[0] == 'R' # move right means change cardinal to east
-      $D = 'E'
-      $coords[2] += i[1..3].to_i # $coords = [N, S, E, W]
-    else
-      $D = 'W'
-      $coords[3] += i[1..3].to_i
-  elsif $D == 'E'
-  ...
-end
+566  477  376
+575  488  365
+ 50   18  156
+558  673  498
+133  112  510
+...
 ```
 
-## A future project
+Thing is, we've already coded *exactly* for this situation in a previous lab: the Triangle classification lab.
 
-Michael Stevens (you know, [the vsauce dude](https://www.youtube.com/user/Vsauce)) recently popped up in my feed with a year-old video. He [tk] that's really peculiar, one of those chin-stroking ideas that deconstruct your understanding of human behavior. — [Zipf's law](https://en.wikipedia.org/wiki/Zipf's_law)
+All I had to do was parse through, stick the triplets into an array, and run class methods to count how many invalid triangle lengths there were.
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/fCn8zs912OE?rel=0" frameborder="0" allowfullscreen></iframe>
+But wait! The challenges come in pairs. After the first challenge, there was another one telling me that you need to actually count triangle lengths in **columns**, not rows. Each three numbers going down would be considered triangle lengths.
 
-George Zipf, an early 20th century linguist, found a surprising trend among all languages: word frequency follows a exponential distribution scale.
+![](http://i.imgur.com/SYRxDZm.png)
 
-In the English language, the word "the" comes up twice as much as the next word ("be"). The third one comes up a third as much as the most popular word. You can read [more on it](https://colala.bcs.rochester.edu/papers/piantadosi2014zipfs.pdf) via this recently published paper here, but this image might suffice:
+So in the code above, `[566, 575, 50], [477, 488, 18], [376, 365, 156]` would have been the first 3x3 of triangle lengths.
 
-![](https://blogemis.files.wordpress.com/2015/09/graph-zipf.png)
+Turns out there's a handy, but super-specific Ruby method: `.transpose`
+
+What `.transpose` does is take an array, like so:
+
+```
+arr =
+[[0, 1, 2],
+[2, 3, 4],
+[6, 5, 3],
+[9, 4, 3],
+[5, 2, 7],
+[6, 1, 8]]
+```
+
+...And flips the rows and columns. In the above array, there is an array of arrays, column length 6, row length 3. When transposed, it'll return an array that's row length 6, column length 3.
+
+```
+arr.transpose
+# output:
+# [[0, 2, 6, 9, 5, 6],
+# [1, 3, 5, 4, 2, 1],
+# [2, 4, 3, 3, 7, 8]]
+```
+
+So what I did was organize the numbers into rows of 3x3 arrays. So in the input snippet I had above, I just parsed the rows into arrays, then transposed them to get the right lengths to calculate:
+
+```
+arr = [
+[566,  477,  376],
+[575,  488,  365],
+[50,   18,  156]].transpose
+
+# output:
+# [[566, 575, 50],
+# [477, 488, 18],
+# [376, 365, 156]]
+
+```
+
+Iterate enough to cover all 1,992 rows, run the Triangle.kind method on all of those rows, and you're golden.
+
+The purpose of exercise — a refreshing one, really — isn't to make discrete class structures, pull from databases, or to craft some sort of project paradigm for future developers. You're free to just throw spaghetti at the wall until you come up with a right output.
+
+![](http://i.imgur.com/viz1nqh.png)
