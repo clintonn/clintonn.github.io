@@ -3,7 +3,7 @@ gems:
 # Site settings
 title: 20 GOTO 10
 description: >
-  The future is incredible, the future is terrifying.
+  🤖
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://clinton.so" # the base hostname & protocol for your site
