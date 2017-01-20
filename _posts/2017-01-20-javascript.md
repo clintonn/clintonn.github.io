@@ -51,6 +51,8 @@ window.onsubmit = function(event) {
 }
 ```
 
+[JSFIDDLE](https://jsfiddle.net/clintonn/jywy9qmw/)
+
 Obviously vanilla JavaScript is a lot more verbose when it comes to selecting and appending nodes to the DOM tree. This wasn't terribly difficult, but I could do with something that's a little more low-language.
 
 **FUN FACTOR**
@@ -68,8 +70,8 @@ $('form#add-todo').submit((event) => {
     `<li>${$val}<button class="remove">Remove</button></li>`
   )
   $('#add-todo-item').val('')
-  $('button').click( (event) => {
-  event.currentTarget.parentElement.remove()
+  $('button').click( function(event) {
+    $(this).parent().remove()
   })
 })
 ```
@@ -88,6 +90,8 @@ $('form#add-todo').submit((event) => {
   <input type="submit" />
 </form>
 ```
+
+[JSFIDDLE](https://jsfiddle.net/clintonn/Lxmnc6j6/)
 
 Selectors did me some good here, and the jQuery's slightly more forgiving `.append()` method made adding nodes to the DOM tree much easier.
 
@@ -145,8 +149,6 @@ You can iterate over the object in the view like so in HTML:
 
 Kinda like rails!
 
-Anyway, [here's the to-do list app](https://jsfiddle.net/clintonn/ahejLk9k/2/) I made on Vue with like a half hour of looking through docs.
-
 #### JAVASCRIPT
 
 ```JavaScript
@@ -188,6 +190,10 @@ var todo = new Vue({
 <input type="text" v-model="newToDo" v-on:keyup.enter="addToDo" id="add-todo-field" />
 </div>
 ```
+
+[FIDDLE](https://jsfiddle.net/clintonn/ahejLk9k/2/)
+
+One of the hardest things in this lab was actually selecting the nodes I needed
 
 **FUN FACTOR**
 ![thinking-emoji](http://i.imgur.com/FP5ZB2A.jpg)
