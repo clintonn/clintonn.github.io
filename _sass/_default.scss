@@ -44,6 +44,7 @@ a.logo, a.logo:after, a.logo:hover:after {
 code {
   font-family: $mono;
   color: #859900;
+  font-size: .9em;
 }
 
 p {
@@ -114,7 +115,7 @@ strong {
     text-align: center;
     width: 35%;
     margin: 0 auto;
-    border-bottom: 5px solid black;
+    // border-bottom: 5px solid black;
 }
 
 .menu {

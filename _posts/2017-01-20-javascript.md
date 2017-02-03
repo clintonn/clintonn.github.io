@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vues from the 6"
+title: "Making a to-do in Vue"
 subtitle: "What I Made with Vue in an Hour of Fooling Around"
 date: 2017-01-20-12:13:00
 categories: [code]
