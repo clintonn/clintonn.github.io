@@ -55,9 +55,6 @@ window.onsubmit = function(event) {
 
 Obviously vanilla JavaScript is a lot more verbose when it comes to selecting and appending nodes to the DOM tree. This wasn't terribly difficult, but I could do with something that's a little more low-language.
 
-**FUN FACTOR**
-![screaming-inside](https://thumb1.shutterstock.com/display_pic_with_logo/64260/548279518/stock-photo-healthcare-pain-stress-age-and-people-concept-senior-man-suffering-from-headache-at-home-548279518.jpg)
-
 ## JQUERY
 
 #### Javascript
@@ -95,8 +92,6 @@ $('form#add-todo').submit((event) => {
 
 Selectors did me some good here, and the jQuery's slightly more forgiving `.append()` method made adding nodes to the DOM tree much easier.
 
-**FUN FACTOR**
-![still-not-there](https://thumb10.shutterstock.com/display_pic_with_logo/76219/299361773/stock-photo-confused-businessman-looking-at-laptop-computer-in-office-299361773.jpg)
 
 ### Vue
 
@@ -192,12 +187,6 @@ var todo = new Vue({
 ```
 
 [FIDDLE](https://jsfiddle.net/clintonn/ahejLk9k/2/)
-
-One of the hardest things in this lab was actually selecting the nodes I needed
-
-**FUN FACTOR**
-![thinking-emoji](http://i.imgur.com/FP5ZB2A.jpg)
-
 
 ### A little more about what Vue and similar MVVM JavaScript frameworks are for
 

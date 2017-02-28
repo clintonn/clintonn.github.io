@@ -18,6 +18,7 @@ For instance, in the contrived example below, we're setting a `welcomeNav` compo
 
 ```JavaScript
 import LoginButton from 'LoginButton'
+
 class WelcomeScreen extends React.Component {
 
   render() {

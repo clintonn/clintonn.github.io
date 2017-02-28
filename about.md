@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: about
 title: About
-subtitle: Clinton N
+subtitle:
 permalink: /about/
 ---
 
