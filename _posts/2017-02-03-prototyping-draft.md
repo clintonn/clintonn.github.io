@@ -6,6 +6,8 @@ date: 2017-03-02-18:25:00
 categories: [ephemera]
 ---
 
+![sketch-icon](http://radishlab.com/wp-content/uploads/2015/08/sketch-app-icon-e1439400898972.png)
+
 Back when I was working on my first Rails app, my team managed all its tasks through a single, chaotic Trello board.
 
 There were times when we lost track of how the end product should have looked and behaved. It wasn't that our goals and endgame functionality weren't explicitly — there were plenty of discussions and whiteboarding and boxes and wireframes.
