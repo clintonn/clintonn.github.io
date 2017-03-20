@@ -122,8 +122,7 @@ strong {
     color: $iron;
     display: block;
     text-align: center;
-    width: 35%;
-    margin: 0 auto;
+    width: 100%;
     // border-bottom: 5px solid black;
 }
 
@@ -329,7 +328,7 @@ strong {
 
     .post-teaser__title {
         font-size: 18px;
-        @include centered-block();
+        // @include centered-block();
     }
 
     .post-teaser__date {
