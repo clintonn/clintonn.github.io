@@ -1,9 +1,11 @@
 ---
+title: Zipf's law
+date: 2016-12-12 21:15:00 Z
+categories:
+- code
+- daily-report
 layout: post
-title:  "Zipf's law"
-subtitle: ""
-date: 2016-12-12-21:15:00
-categories: [code, daily-report]
+subtitle: ''
 ---
 
 Michael Stevens (you know, [the vsauce dude](https://www.youtube.com/user/Vsauce)) recently popped up in my feed with a year-old video. He [tk] that's really peculiar, one of those chin-stroking ideas that deconstruct your understanding of human behavior. — [Zipf's law](https://en.wikipedia.org/wiki/Zipf's_law)

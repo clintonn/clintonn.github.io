@@ -1,8 +1,9 @@
 ---
+title: Compress like your conversion rate depends on it
+date: 2017-03-14 12:30:00 Z
+categories:
+- code
 layout: post
-title: "Compress like your conversion rate depends on it"
-date: 2017-03-14-12:30:00
-categories: [code]
 ---
 
 ![compression example](http://www.exposureguide.com/images/file-formats/jpeg-compression.jpg)

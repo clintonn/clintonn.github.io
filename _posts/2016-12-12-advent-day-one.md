@@ -1,9 +1,11 @@
 ---
+title: Advent of Code
+date: 2016-12-12 00:20:00 Z
+categories:
+- code
+- daily-report
 layout: post
-title: "Advent of Code"
-subtitle: ""
-date: 2016-12-12-00:20:00
-categories: [code, daily-report]
+subtitle: ''
 ---
 
 ![](http://i.imgur.com/2SmSSjr.jpg)

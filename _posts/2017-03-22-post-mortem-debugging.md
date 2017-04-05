@@ -1,8 +1,9 @@
 ---
+title: Debugging with `begin`
+date: 2017-03-22 15:00:00 Z
+categories:
+- code
 layout: post
-title: "Debugging with `begin`"
-categories: [code]
-date: 2017-03-22-15:00:00
 ---
 
 Let's say every time you left the house and the door jammed the house just toppled. That's definitely no way to live. But for any Ruby or Rails program that doesn't have proper error handling, that's likely what happens when the program expects one thing and doesn't know how to handle the other.

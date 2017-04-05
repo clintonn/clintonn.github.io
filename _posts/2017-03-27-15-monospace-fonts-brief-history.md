@@ -1,8 +1,10 @@
 ---
+title: A brief history of monospace fonts
+date: 2017-03-27 15:47:40 Z
+categories:
+- code
+- ephemera
 layout: post
-title: "A brief history of monospace fonts"
-date: 2017-03-27-15:47:40
-categories: [code, ephemera]
 ---
 
 ![A Kanye tweet cross-stitched. It says: "Sometimes I get emotional over fonts"](http://i.imgur.com/AcHb5ui.jpg)

@@ -1,9 +1,10 @@
 ---
+title: Making a Learning Platform on React
+date: 2017-02-27 15:25:00 Z
+categories:
+- code
 layout: post
-title: "Making a Learning Platform on React"
-subtitle: ""
-date: 2017-02-27-15:25:00
-categories: [code]
+subtitle: ''
 ---
 
 ![Maestro hero](http://i.imgur.com/XQEku9F.png?1)

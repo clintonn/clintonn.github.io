@@ -1,9 +1,10 @@
 ---
+title: Why developers should learn Sketch
+date: 2017-03-02 18:25:00 Z
+categories:
+- ephemera
 layout: post
-title: "Why developers should learn Sketch"
-subtitle: ""
-date: 2017-03-02-18:25:00
-categories: [ephemera]
+subtitle: ''
 ---
 
 ![sketch-icon](http://radishlab.com/wp-content/uploads/2015/08/sketch-app-icon-e1439400898972.png)
