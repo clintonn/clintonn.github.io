@@ -1,8 +1,8 @@
 ---
-layout: about
 title: About
-subtitle:
-permalink: /about/
+permalink: "/about/"
+layout: about
+subtitle: 
 ---
 
 24 / M / Brooklyn  

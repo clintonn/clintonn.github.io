@@ -1,9 +1,10 @@
 ---
+title: Where Vue and React divide on templating
+date: 2017-02-02 23:25:00 Z
+categories:
+- code
 layout: post
-title: "Where Vue and React divide on templating"
-subtitle: ""
-date: 2017-02-02-23:25:00
-categories: [code]
+subtitle: ''
 ---
 
 ![react-logo](https://facebook.github.io/react/img/logo_og.png)
