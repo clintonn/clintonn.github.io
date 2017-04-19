@@ -1,9 +1,10 @@
 ---
+title: Learning Redis from Scratch
+date: 2017-04-19 12:45:00 Z
+categories:
+- code
 layout: post
-title: "Learning Redis from Scratch"
-subtitle: "NoSQL, not now, not ever"
-date: 2017-04-19-12:45:00
-categories: [code]
+subtitle: NoSQL, not now, not ever
 ---
 
 ![redis logo](http://www.cloudtalk.it/wp-content/uploads/2015/04/redis-database-intervista-sanfilippo.png)
