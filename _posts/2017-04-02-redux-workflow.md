@@ -1,9 +1,10 @@
 ---
+title: A Basic Redux Workflow in React
+date: 2017-04-02 00:35:48 Z
+categories:
+- code
 layout: post
-title: "A Basic Redux Workflow in React"
-subtitle: "Store, action, action creators, reducers, and adapters"
-date: 2017-04-02-00:35:48
-categories: [code]
+subtitle: Store, action, action creators, reducers, and adapters
 ---
 
 To get a better mental map of how Redux works in conjunction with a React app, it's necessary to lay out some groundwork on why you might want Redux in the first place.
