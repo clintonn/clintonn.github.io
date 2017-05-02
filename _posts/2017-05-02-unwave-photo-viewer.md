@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2017-05-02-09:44:50
+title: Unwave
+date: 2017-05-02 09:44:50 Z
 categories:
 - code
-title: "Unwave"
-subtitle: "Making the one small project I've been meaning to do."
+layout: post
+subtitle: Making the one small project I've been meaning to do.
 ---
 
 ![unsplash hero](https://images.unsplash.com/photo-1486758206125-94d07f414b1c?dpr=1&auto=format&fit=crop&w=1200&h=800&q=80&cs=tinysrgb&crop=&bg=)
