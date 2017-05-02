@@ -1,5 +1,5 @@
 ---
-title: Learning Redis from Scratch
+title: Learning Redis from scratch
 date: 2017-04-19 12:45:00 Z
 categories:
 - code
@@ -14,10 +14,10 @@ More and more I've been finding roles that ask you to know some NoSQL database i
 The why gets us into some very thick weeds. [Couchbase][whitepaper], the maker of an open-source document-oriented NoSQL database, has a white paper on why NoSQL databases might be better for certain applications. In short:
 
 1. They're schema-less, which means that your model can expand to fit however many attributes you want instead of sticking to a static schema.
-2. You can store more types of data primitives in NoSQL databases. In most cases like Redis, they'll be serialized as a string and cast back when you retrieve it.
+2. You can store more types of data primitives in NoSQL databases. In most cases like Redis, they'll be serialized as a string and can be cast back when you retrieve it.
 3. NoSQL databases work well with [horizontal scaling][horizontal-scaling]. They're designed to distribute loads between multiple machines more effectively than RDBMS's, which usually opt for vertical scalability.
 
-There are obviously big discussions out RDBMS and NoSQL DBs that mostly boil down to one question: what are you actually doing with your data? If you're just storing it rather than finding relations and doing calculations and joining, you'll want a RDBMS. If you just need a document or a store with the ability to save large binary-safe data, then NoSQL might be for you.
+There are obviously big discussions out RDBMS and NoSQL DBs that mostly boil down to one question: what are you actually doing with your data? If you're finding relations and doing calculations and joining your data, you'll want a RDBMS. If you just need a document-based store with the ability to save large chunks of binary-safe data, then NoSQL might be a better performer.
 
 In any case, I wasn't out to make any production-scale apps with this database. I simply wanted to get to understand how it worked a bit better.
 
@@ -25,7 +25,7 @@ In any case, I wasn't out to make any production-scale apps with this database. 
 
 Redis is a data structure store. It stores all its values in unique keys, via the `SET` and `GET` methods for normal primitives (strings, integers, floats) and specialized methods for lists, hashes, and sets.
 
-Most languages come with packages that bind Redis commands to a client. Ruby has one in a gem called 'redis.' It responds similarly to Rails' ActiveRecord:
+Most languages come with packages that bind Redis commands to a client. Ruby has its own redis gem, which is structured similarly to what you might see with ActiveRecord:
 
 ```ruby
 require 'redis'

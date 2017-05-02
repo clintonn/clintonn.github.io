@@ -1,5 +1,5 @@
 ---
-title: A Basic Redux Workflow in React
+title: A basic Redux workflow with React
 date: 2017-04-02 00:35:48 Z
 categories:
 - code
