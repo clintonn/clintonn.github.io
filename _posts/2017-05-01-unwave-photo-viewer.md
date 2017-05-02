@@ -56,7 +56,7 @@ One of the more fun problems I had was figuring out how to route API calls to Un
 For the listening server, I could have used a Sinatra server to keep it lean, but because Heroku's Rails deployment is so streamlined, I just generated a new Rails API without ActiveRecord or database configs:
 
 ```
-rails new unwave_api --no-test-framework --O
+$ rails new unwave_api --no-test-framework --O
 ```
 
 The API simply listens for incoming requests and passes it off to a `PhotosController` action to forward to Unsplash's API. The action strings together the URL and calls the appropriate endpoint with supplied params, and forwards the response back:
