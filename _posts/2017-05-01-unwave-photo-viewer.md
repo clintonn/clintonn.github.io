@@ -13,7 +13,7 @@ The past few weeks I've been mulling smaller, more actionable project ideas to h
 
 Like well-informed listicles or shortform articles, they have their purpose — to be readily digestible and be a tangible for your technical ability. Here's looking at you, employers.
 
-That's all leading me to say I made a small thing and I finally made something that 1) works, and 2) explains itself. It's called **Unwave**, and you can see [a working demo of it here](http://splash.surge.sh).
+That's all leading me to say I made a small thing and I finally made something that 1) works, and 2) explains itself. It's called **Unwave**, and you can see [a working demo of it here](http://unwave.surge.sh).
 
 ## The prompt
 
@@ -134,8 +134,8 @@ Some of the differences I found when working in Preact versus React:
 - No SyntheticEvents that you're used to in React — use vanilla `createEventHandler` and bind it correctly.
 - `render()` takes in a node as a third arg that the component replaces, rather than appends on.
 
-Deployment-wise, it was fun and easy to build this thing and see the bundle size actually end up a fraction of a React production bundle. For 39KB over the wire, we're getting a lot, and much of it is extensible and modular!
+Deployment-wise, it was fun and easy to build this thing and see the bundle size actually end up a fraction of a React production bundle. For 39KB over the wire, we're getting a lot, and much of it is extensible and modular! And if hosting static projects on Github weren't easy enough, deploying on [Surge](https://surge.sh) was stupidly easy. 10/10
 
-While on the surface this photo viewer's just a presentational layer, it actually provides a view that Unsplash itself doesn't give users simply visiting the site. You don't have easy, no-signup access to a "random" photo view, and their curated collection is tucked away across several pages.
+And while on the surface this photo viewer's just a presentational layer, it actually provides a view that Unsplash itself doesn't give users simply visiting the site. You don't have easy, no-signup access to a "random" photo view, and their curated collection is tucked away across several pages.
 
-But yet we have endpoints for them and more. Much thanks to the devs for making that available, and for giving me a pretty sweet project to build out over a day. ✌️
+And yet we have endpoints for them and more. Much thanks to the devs for making that available, and for giving me a pretty sweet project to build out over a day. ✌️
