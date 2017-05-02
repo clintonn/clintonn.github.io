@@ -11,9 +11,9 @@ subtitle: Making the one small project I've been meaning to do.
 
 The past few weeks I've been mulling smaller, more actionable project ideas to hock code at. The idea — coming out of coming out of a coding program, or I guess any CS degree — is that you should have something small, working, and preferably fun to play around with.
 
-Like well-informed listicles or shortform articles, they have their purpose — to be readily digestible and be a tangible for your technical ability. Here's looking at you, employers.
+Like well-informed listicles or shortform articles, they have their purpose — to be readily digestible and be a tangible for your technical ability.
 
-That's all leading me to say I made a small thing and I finally made something that 1) works, and 2) explains itself. It's called **Unwave**, and you can see [a working demo of it here](http://unwave.surge.sh).
+That's all leading me to say I made a small thing and I finally made something that 1) works, and 2) isn't something I need to prep a 30-second pitch for; it explains itself. It's called **Unwave**, and you can see [a working demo of it here](http://unwave.surge.sh).
 
 ## The prompt
 
